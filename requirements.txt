@@ -1,0 +1,37 @@
+# AutoResearch-X 依賴套件
+# 安裝：pip install -r requirements.txt
+
+# ── 核心 ──────────────────────────────────────────────────────
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+joblib>=1.3
+
+# ── 超參數優化 ─────────────────────────────────────────────────
+optuna>=3.6              # GPSampler 需要 3.6+
+
+# ── Boosting 模型 ──────────────────────────────────────────────
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+
+# ── 分群 ────────────────────────────────────────────────────
+hdbscan>=0.8
+kneed>=0.8               # KneeLocator（Elbow / k-distance）
+
+# ── 時間序列 ──────────────────────────────────────────────────
+# AutoGluon-TimeSeries（較大，依需求安裝）
+# pip install autogluon.timeseries
+
+statsforecast>=1.7       # ETS / ARIMA / Theta 統計基準線
+
+# Darts（異常偵測，選裝）
+# pip install darts
+
+# ── 深度學習 ──────────────────────────────────────────────────
+# transformers, datasets, torch 選裝（DL pillar 才需要）
+# pip install transformers datasets torch
+
+# ── 輔助 ──────────────────────────────────────────────────────
+tqdm>=4.66
